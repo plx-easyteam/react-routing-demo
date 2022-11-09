@@ -17,7 +17,7 @@ code {
 }
 
 ul {
-	display: "flex";
-	gap: "5px";
-	list-style: "none";
+	display: flex;
+	gap: 5px;
+	list-style: none;
 }

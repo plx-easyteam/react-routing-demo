@@ -21,7 +21,7 @@ export default function Unauthorized() {
 						onChange={(e) => handleInput(e)}
 						value={username}
 					/>
-					<Link to={"/user/" + username}>Visit User {username}</Link>
+					<Link to={username ? "/user/" + username : "#"}>Visit User {username}</Link>
 				</div>
 				<button
 					onClick={() => {

@@ -3,10 +3,11 @@ import {NavLink} from "react-router-dom";
 
 function Layout(props: {children: React.ReactNode}) {
 	return (
-		<div>
+		<div className="App">
 			<h3>Routing Demo App</h3>
 
-			<ul style={{display: "flex", gap: "5px", listStyle: "none"}}>
+			{/* <ul style={{display: "flex", gap: "5px", listStyle: "none"}}> */}
+			<ul>
 				<li>
 					<NavLink to={"/"}>Home</NavLink>
 				</li>
@@ -18,7 +19,7 @@ function Layout(props: {children: React.ReactNode}) {
 				</li>
 			</ul>
 
-			<section className="App">{props.children}</section>
+			<section>{props.children}</section>
 		</div>
 	);
 }
